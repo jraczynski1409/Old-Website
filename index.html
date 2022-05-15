@@ -9,11 +9,14 @@
         <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
         
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style/body.css">
         <link rel="stylesheet" href="style/menu.css">
         <link rel="stylesheet" href="style/klasy.css">
         <link rel="stylesheet" href="style/header.css">
+        
         
         
         <script src="scripts/animacje/anijs-master/src/event_systems/jquery/anijs-jquery-event-system.js"></script>
@@ -23,27 +26,92 @@
     <body>
         <section>
             <div id="top_menu_bar">
-                <a href="index.html"><img src="img/logo_buy_desing_wnetrza_od_kuchni.png" alt="logo wnetrza od kuchni" id="logo_w_menu"></a>
-                <img src="/icons/menu_icon.png" onclick = "toggleMenu()" class="icon" id="ikona_w_menu" data-anijs="if: click, do: fadeInDown animated, after:toggleMenu, to: #menu; if: click, do:flipInY animated">
+                
+                    <a href="index.html"><img src="img/logo_buy_desing_wnetrza_od_kuchni.png" alt="logo wnetrza od kuchni" id="logo_w_menu"></a>
+                    <img src="/icons/menu_icon.png" onclick = "toggleMenu()" class="icon" id="ikona_w_menu" data-anijs="if: click, do: fadeInDown animated, after:toggleMenu, to: #menu; if: click, do:flipInY animated">
+                
             </div>
         </section>
         <section>
             <nav>
                 <div id="menu" class="nie_wyswietlaj">
-                    <span class="element_menu" id="naglowek_menu">Menu</span>
-                    <a href="#dodac" class="link element_menu">Strona główna</a>
-                    <a href="#dodac" class="link element_menu">O nas</a>
-                    <a href="#dodac" class="link element_menu">Projekty</a>
-                    <a href="#dodac" class="link element_menu">Kontakt</a>
+                    <span class="element_menu col-md-12" id="naglowek_menu">Menu</span>
+                    <a href="#dodac" class="link element_menu col-md-12">Strona główna</a>
+                    <a href="#dodac" class="link element_menu col-md-12">O nas</a>
+                    <a href="#dodac" class="link element_menu col-md-12">Projekty</a>
+                    <a href="#dodac" class="link element_menu col-md-12">Kontakt</a>
                 </div>
             </nav>
         </section>
             <main>
                 <header>
-                    <div id="top_main">
-                        a
+                    <div id="top_main" class="row">
+                        <div class="col-md-8" id="top_main_left">
+                            <h1>Wnętrza tworzone od kuchni</h1>
+                            <span class="n2">Każdy projekt od czegoś się zaczyna. Prawdopodobnie myślisz od czego zacznie się twój. Nie myśl, tylko pozwól nam działać.</span>
+                            <button class="przycisk">Kliknij aby dowiedzieć sie więcej &#8594;</button>
+                        </div>
+                        
+                        <div class="col-md-6">
+                        </div>
                     </div>
                 </header>
+                <section>
+                    <div class="row" id="stats_counter_div">
+                        <div class="col-md-3 stats_counter">
+                            <div class="stats_number">
+                                <div class="stats_number_inside">
+                                    <div class="stats_number_inside_top">
+                                        5+
+                                    </div>
+                                    <div class="stats_number_inside_bot">
+                                        wykonanych projektów
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        
+                        <div class="col-md-3 stats_counter">
+                            <div class="stats_number">
+                                <div class="stats_number_inside">
+                                    <div class="stats_number_inside_top">
+                                        205+
+                                    </div>
+                                    <div class="stats_number_inside_bot">
+                                        zadowolonych klientów
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        
+                        <div class="col-md-3 stats_counter">
+                            <div class="stats_number">
+                                <div class="stats_number_inside">
+                                    <div class="stats_number_inside_top">
+                                        5+
+                                    </div>
+                                    <div class="stats_number_inside_bot">
+                                        lat doświadczenia
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                        
+                        <div class="col-md-3 stats_counter">
+                            <div class="stats_number">
+                                <div class="stats_number_inside">
+                                    <div class="stats_number_inside_top" style="font-size:96px; font-weight: 900">
+                                        &infin;
+                                    </div>
+                                    <div class="stats_number_inside_bot">
+                                        liczba pomysłów
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                  
+                    </div>
+                </section>
             </main>
         
         
@@ -51,5 +119,7 @@
         <script src="scripts/animacje/anijs-master/src/anijs.js"></script>
         <script src="scripts/animacje/anijs-master/src/helpers/dom/anijs-helper-dom.js"></script>
         
+        
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
