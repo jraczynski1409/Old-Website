@@ -34,3 +34,49 @@
 {
     padding-top: 300px;
 }
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+h1
+{
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    
+}
+
+.n2{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+
+.przycisk
+{
+    color:#fff;
+    background-color:#119955;
+    border: 0px solid #007733;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin:10px;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.przycisk:hover{
+    background-color:#007733;
+    transition-duration: 0.2s;
+}
+
