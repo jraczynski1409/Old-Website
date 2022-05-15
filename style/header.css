@@ -1,12 +1,81 @@
-main
-{
-}
 
 #top_main
 {
     margin: 0;
     width:100%;
-    height:840px;
-    display: block;
+    min-height:650px;
+    display: table;
     background-image: url(/img/kolaz_zdjec_wnetrza_od_kuchni.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
 }
+
+#top_main_left
+{
+    text-align: center;
+    display:table-cell;
+    vertical-align: middle;
+}
+
+#stats_counter_div
+{
+    width:100%;
+    height: 200px;
+}
+
+
+.stats_counter
+{
+    height: 40px;
+    background-color: #fff;
+}
+
+
+.stats_number
+{
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: block;
+    background-color:#fff;
+    margin-top: -60px;
+    border-radius: 20px;
+    border:30px solid #A0BCC2;
+    filter: drop-shadow(5px 5px 0px #DAE5D0);
+}
+
+.stats_number_inside
+{
+    margin: auto;
+    display: block;
+    background-color:#fff;
+    border-radius: 10px;
+    padding-top:20px;
+    
+    height: 160px;
+    width: 160px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.stats_number_inside_top
+{
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 80px;
+    padding-bottom: 20px;
+    width: 160px;
+    text-align: center;
+    border-bottom: 3px solid #A0BCC2;
+}
+
+.stats_number_inside_bot
+{
+    text-align: center;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+
