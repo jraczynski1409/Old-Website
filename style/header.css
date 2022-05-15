@@ -1,0 +1,12 @@
+main
+{
+}
+
+#top_main
+{
+    margin: 0;
+    width:100%;
+    height:840px;
+    display: block;
+    background-image: url(/img/kolaz_zdjec_wnetrza_od_kuchni.jpg);
+}

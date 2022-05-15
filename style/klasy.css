@@ -1,0 +1,36 @@
+.icona
+{
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    
+}
+
+.link
+{
+    text-decoration: none;
+    background-color:#A0BCC2;
+    color:#ffffff;
+    border-bottom: 1px solid #C2DEE4;
+}
+
+.link:hover
+{
+    background-color: #B1CDD3;
+    transition-duration: 0.2s;
+}
+
+.nie_wyswietlaj
+{
+    display: none;
+}
+
+.wyswietlaj
+{
+    display: block;
+}
+
+.add300px
+{
+    padding-top: 300px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="style/body.css">
+        <link rel="stylesheet" href="style/menu.css">
+        <link rel="stylesheet" href="style/klasy.css">
+        <link rel="stylesheet" href="style/header.css">
+        
+        
+        <script src="scripts/animacje/anijs-master/src/event_systems/jquery/anijs-jquery-event-system.js"></script>
+        
+        
+    </head>
+    <body>
+        <section>
+            <div id="top_menu_bar">
+                <a href="index.html"><img src="img/logo_buy_desing_wnetrza_od_kuchni.png" alt="logo wnetrza od kuchni" id="logo_w_menu"></a>
+                <img src="/icons/menu_icon.png" onclick = "toggleMenu()" class="icon" id="ikona_w_menu" data-anijs="if: click, do: fadeInDown animated, after:toggleMenu, to: #menu; if: click, do:flipInY animated">
+            </div>
+        </section>
+        <section>
+            <nav>
+                <div id="menu" class="nie_wyswietlaj">
+                    <span class="element_menu" id="naglowek_menu">Menu</span>
+                    <a href="#dodac" class="link element_menu">Strona główna</a>
+                    <a href="#dodac" class="link element_menu">O nas</a>
+                    <a href="#dodac" class="link element_menu">Projekty</a>
+                    <a href="#dodac" class="link element_menu">Kontakt</a>
+                </div>
+            </nav>
+        </section>
+            <main>
+                <header>
+                    <div id="top_main">
+                        a
+                    </div>
+                </header>
+            </main>
+        
+        
+        <script src="scripts/toggleMenu.js"></script>
+        <script src="scripts/animacje/anijs-master/src/anijs.js"></script>
+        <script src="scripts/animacje/anijs-master/src/helpers/dom/anijs-helper-dom.js"></script>
+        
+    </body>
+</html>
