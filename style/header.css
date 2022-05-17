@@ -1,9 +1,9 @@
 
 #top_main
 {
-    margin: 0;
+    margin:0;
     width:100%;
-    min-height:650px;
+    min-height:700px;
     display: table;
     background-image: url(/img/kolaz_zdjec_wnetrza_od_kuchni.jpg);
     background-position: center;
@@ -62,12 +62,11 @@
 .stats_number_inside_top
 {
     font-weight: 900;
-    font-size: 64px;
-    line-height: 80px;
-    padding-bottom: 20px;
+    font-size: 48px;
+    line-height: 40px;
+    margin-top: 25px;
     width: 160px;
     text-align: center;
-    border-bottom: 3px solid #A0BCC2;
 }
 
 .stats_number_inside_bot
@@ -75,7 +74,8 @@
     text-align: center;
     line-height: 35px;
     font-weight: 500;
-    font-size: 18px;
-    letter-spacing: -1px;
+    font-size: 14px;
+    letter-spacing: -1.1px;
 }
+
 
