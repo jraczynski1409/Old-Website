@@ -4,7 +4,7 @@
         
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
         
@@ -12,20 +12,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="photoswipe/dist/photoswipe.css">
         <link rel="stylesheet" href="style/body.css">
         <link rel="stylesheet" href="style/menu.css">
         <link rel="stylesheet" href="style/klasy.css">
         <link rel="stylesheet" href="style/header.css">
-        
+        <link rel="stylesheet" href="style/onas.css">
+        <link rel="stylesheet" href="style/uslugi.css">
+        <link rel="stylesheet" href="style/druzyna.css">
+        <link rel="stylesheet" href="style/realizacje.css">
+        <link rel="stylesheet" href="style/image_viever.css">
+        <link rel="stylesheet" href="style/stopka.css">
         
         
         <script src="scripts/animacje/anijs-master/src/event_systems/jquery/anijs-jquery-event-system.js"></script>
-        
+        <script src="scripts/image_viever.js"></script>
         
     </head>
     <body>
         <section>
-            <div id="top_menu_bar">
+            <div id="top_menu_bar" data-anijs="if: scroll,on:window, do: slideInDown animated, before: scrollReveal">
                 
                     <a href="index.html"><img src="img/logo_buy_desing_wnetrza_od_kuchni.png" alt="logo wnetrza od kuchni" id="logo_w_menu"></a>
                     <img src="/icons/menu_icon.png" onclick = "toggleMenu()" class="icon" id="ikona_w_menu" data-anijs="if: click, do: fadeInDown animated, after:toggleMenu, to: #menu; if: click, do:flipInY animated">
@@ -35,34 +41,40 @@
         <section>
             <nav>
                 <div id="menu" class="nie_wyswietlaj">
+					<span class="element_menu col-md-12" id="naglowek_menu"><img src="/icons/exit_menu_icon.png" onclick = "toggleMenu()" class="icon" id="ikona_w_menu" data-anijs="if: click, do: fadeOutUp animated, after:toggleMenu, to: #menu; if: click, do:flipInY animated"></span>
                     <span class="element_menu col-md-12" id="naglowek_menu">Menu</span>
                     <a href="#dodac" class="link element_menu col-md-12">Strona główna</a>
                     <a href="#dodac" class="link element_menu col-md-12">O nas</a>
+                    <a href="#dodac" class="link element_menu col-md-12">Uslugi</a>
+                    <a href="#dodac" class="link element_menu col-md-12">Nasza druzyna</a>
                     <a href="#dodac" class="link element_menu col-md-12">Projekty</a>
                     <a href="#dodac" class="link element_menu col-md-12">Kontakt</a>
+					<span class="element_menu col-md-12" id="naglowek_menu"></span>
                 </div>
             </nav>
         </section>
             <main>
                 <header>
-                    <div id="top_main" class="row">
+                    <div id="top_main" class="row" data-anijs="if: scroll,on:window, do: zoomIn animated, before: scrollReveal">
                         <div class="col-md-8" id="top_main_left">
-                            <h1>Wnętrza tworzone od kuchni</h1>
-                            <span class="n2">Każdy projekt od czegoś się zaczyna. Prawdopodobnie myślisz od czego zacznie się twój. Nie myśl, tylko pozwól nam działać.</span>
-                            <button class="przycisk">Kliknij aby dowiedzieć sie więcej &#8594;</button>
+                            <h1 data-anijs="if: scroll,on:window, do: fadeInDown animated, before: scrollReveal">Projektowanie wnętrz</h1>
+                            <h2 class="n2" data-anijs="if: scroll,on:window, do: fadeInDown animated, before: scrollReveal">Oferujemy kompleksową usługe <b>projektowania wnetrz w Kielcach</b>, okolicach i całym województwie Świetokrzyskim. Projektujemy <b>wnętrza od kuchni</b>... po łazienke, pokój gościnny, salon, hol a także nawet skrzynke na listy... </h2>
+                            <button class="przycisk" data-anijs="if: scroll,on:window, do: fadeInDown animated, before: scrollReveal">Kliknij aby dowiedzieć sie więcej &#8594;</button>
                         </div>
                         
                         <div class="col-md-6">
                         </div>
                     </div>
                 </header>
-                <section>
-                    <div class="row" id="stats_counter_div">
-                        <div class="col-md-3 stats_counter">
-                            <div class="stats_number">
+                <section data-anijs="if: scroll,on:window, do: fadeInUp animated, before: scrollReveal">
+                    <div class="row" id="stats_counter_div" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+                        <div class="col-md-2 stats_counter">
+                        </div>
+                        <div class="col-md-2 stats_counter">
+                            <div class="stats_number" data-anijs="if: scroll,on:window, do: slideIn animated, before: scrollReveal">
                                 <div class="stats_number_inside">
                                     <div class="stats_number_inside_top">
-                                        5+
+                                        100+
                                     </div>
                                     <div class="stats_number_inside_bot">
                                         wykonanych projektów
@@ -71,11 +83,11 @@
                             </div> 
                         </div>
                         
-                        <div class="col-md-3 stats_counter">
-                            <div class="stats_number">
+                        <div class="col-md-2 stats_counter">
+                            <div class="stats_number" data-anijs="if: scroll,on:window, do: slideIn animated, before: scrollReveal">
                                 <div class="stats_number_inside">
                                     <div class="stats_number_inside_top">
-                                        205+
+                                        250+
                                     </div>
                                     <div class="stats_number_inside_bot">
                                         zadowolonych klientów
@@ -84,8 +96,8 @@
                             </div> 
                         </div>
                         
-                        <div class="col-md-3 stats_counter">
-                            <div class="stats_number">
+                        <div class="col-md-2 stats_counter">
+                            <div class="stats_number" data-anijs="if: scroll,on:window, do: slideIn animated, before: scrollReveal">
                                 <div class="stats_number_inside">
                                     <div class="stats_number_inside_top">
                                         5+
@@ -97,8 +109,8 @@
                             </div> 
                         </div>
                         
-                        <div class="col-md-3 stats_counter">
-                            <div class="stats_number">
+                        <div class="col-md-2 stats_counter">
+                            <div class="stats_number" data-anijs="if: scroll,on:window, do: slideIn animated, before: scrollReveal">
                                 <div class="stats_number_inside">
                                     <div class="stats_number_inside_top" style="font-size:96px; font-weight: 900">
                                         &infin;
@@ -109,17 +121,303 @@
                                 </div> 
                             </div> 
                         </div>
-                  
+                        
+                        <div class="col-md-2 stats_counter">
+                        </div>
                     </div>
                 </section>
+                
+                <section>
+                    <div id="pole_z_tekstem" class="row" data-anijs="if: scroll,on:window, do: fadeIn animated, before: scrollReveal">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <h3 data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">O nas</h3>
+                                
+                                <div class="col-md-1">
+                                </div>
+                                
+                                <span class="col-md-5" style="text-indent: 40px;" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+                                    Od wielu lat nasza firma projektuje wnętrza. W nasz skład wchodzi wielu kreatywnych i ambitnych ludzi. Pracujemy z najlepszymi fachowcami na rynku, którzy zadbają o najwyższą jakość naszych usług oraz zawsze służą pomocą w. Wykonujemy meble na zamówienie tu w Kielcach, dla naszych klientów co sprawia, że wszystko jest robione na czas. Razem z naszymi partnerami biznesowymi wykonujemy kompleksowe urządzanie wnętrz. 
+                                </span>
+                                
+                                <div class="col-md-3" style="positon: absolute;" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+                                    <button class="przycisk srodek">Sprawdz nasze usługi &#8594;</button>
+                                </div>
+                                
+                                <img src="img/obrazek_lidera_rynku.png" alt="" class="obrazek col-md-2" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal"/>
+                                
+                                <div class="col-md-1">
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div id="uslugi" class="row">
+						<div class="col-md-1">
+                        </div>
+                        <div class="col-md-10">
+							<h3 style="text-align: right; padding-right: 40px;" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">Uslugi</h3>
+							<div class="row">
+								
+								
+								<div class="usluga col-md-2 " data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<div class="piktogram" style="background-image: url(img/piktogramy/projekt_online.png)">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4" style="border-right:1px solid #A0BCC2" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<h4>Kontakt online</h4>
+									Jestesmy otwarci na kontakt z klientem przez sieć celem ustalenia szczegółów projektu
+								</span>
+								<!--1w1k-->
+								<div class="usluga col-md-2 " data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+									<div class="piktogram" style="background-image: url(img/piktogramy/projekt_koncepcyjny_wnetrza_od_kuchni.png)" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4 " data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+									<h4>Projekt koncepcyjny</h4>
+										Zarys projektu
+								</span>
+								
+								<div class="usluga col-md-2 " data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<div class="piktogram" style="background-image: url(img/piktogramy/konsultacja_projektowa.png)">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4" style="border-right:1px solid #A0BCC2" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<h4>Konsultacje projektowe</h4>
+									Jesteśmy otwarci na spotkania z klietami na miejscu w celu uzgodnienia szczegółów projektu wnetrza
+								</span>
+								
+								<div class="usluga col-md-2 ">
+									<div class="piktogram" style="background-image: url(img/piktogramy/projekt_wnetrza_od_kuchni.png)" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4 " data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+									<h4>Projekt</h4>
+										Stworzenie projektu na potrzeby klienta
+								</span>
+								
+								
+								<div class="usluga col-md-2 " data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<div class="piktogram" style="background-image: url(img/piktogramy/projektowanie_mebli.png)">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4" style="border-right:1px solid #A0BCC2" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<h4>Projekt mebli</h4>
+									Projekt mebli, które spełnią najwieksze potrzeby klienta
+								</span>
+								
+								<div class="usluga col-md-2 ">
+									<div class="piktogram" style="background-image: url(img/piktogramy/produkcja_mebli.png)" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+									<h4>Produkcja mebli</h4>
+									Zaprojektowane przez nas meble, mogą wyjść z pod naszej ręki, dzieki czemu nie ma mowy o pomyłce
+								</span>
+								
+								<div class="usluga col-md-2 " data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<div class="piktogram" style="background-image: url(img/piktogramy/nadzor_autorski.png)">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4" style="border-right:1px solid #A0BCC2" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<h4>Nadzór autorski</h4>
+									Nadzorujemy wdrażanie projektu w rzeczywistość aby wszystko było jak na papierze
+								</span>
+																
+								
+								<div class="usluga col-md-2 ">
+									<div class="piktogram" style="background-image: url(img/piktogramy/wyposazenie_wnetrz_pod_klucz.png)" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4 " data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+									<h4>Wyposażenie pod klucz</h4>
+										Projektujemy, urządzamy i wyposażamy, a ty tylko odbierasz klucze do twojego nowego lokum
+								</span>
+								
+								<div class="usluga col-md-2 " data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<div class="piktogram" style="background-image: url(img/piktogramy/ozonowanie.png)">
+										
+									</div>
+								</div>
+								<span class="usluga col-md-4 " data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+									<h4>Ozonowanie</h4>
+										Wraz z ozonkielce.pl zadbamy o twoje zdrowie poprzez ozonowanie twojego domu/mieszkania
+								</span>
+								
+							</div>
+						</div>
+						<div class="col-md-1">
+                        </div>
+                    </div>
+                </section>
+				
+				<section>
+					<div id="druzyna" class="row" >
+						<div class="col-md-1">
+                        </div>
+                        <div class="col-md-10">
+							<h3 data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">Nasza drużyna</h3>
+							<div class="row">
+								<!--------------------------------------------->
+								<div class="row osoba col-md-12"  style="border-bottom:1px solid #A0BCC2">	
+									<div class="col-md-2">
+									</div>
+									<div class="col-md-2">
+										<img class="profilowe" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal" alt="zdjecie Pauliny Zelias Jonkisz" src="img/druzyna/paulina_zelias_jonkisz_wnetrza_od_kuchni_kielce.jpg">
+									</div>
+									<div class="col-md-3" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+										<h4 >Paulina Zeliaś-Jonkisz</h4>
+										Kielce
+										<br>Projektantka
+									</div>
+									<div class="col-md-3">
+
+									</div>
+									<div class="col-md-2">
+									</div>
+								</div>
+								<!--------------------------------------------->
+								<div class="row osoba col-md-12">	
+									<div class="col-md-2">
+									</div>
+									<div class="col-md-2">
+										<img class="profilowe" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal" alt="zdjecie Pauliny Zelias Jonkisz" src="img/druzyna/tajemniczy_anonim_jakub_raczynski_wnetrza_od_kuchni_kielce.jpg">
+									</div>
+									<div class="col-md-3" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+										
+										<h4 >Tajemniczy anonim</h4>
+										Kielce
+										<br>Projektant 
+									</div>
+									<div class="col-md-3" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+										Projektant ston internetowych, zapalony kibic Premier League i Manchester'u Unietd oraz niedzielny gracz orlika. Lubi koty ale ma psa.
+									</div>
+									<div class="col-md-2">
+									</div>
+								</div>
+								<!--------------------------------------------->
+							</div>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<div id="realizacje" class="row">
+						<div class="col-md-1">
+                        </div>
+                        <div class="col-md-10">
+							<h3 style="text-align: right; padding-right: 40px;" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">Realizacje</h3>
+							<div class="row">
+								<div class="col-md-2">
+								</div>
+								
+								<div class="col-md-4 galeria">
+									<a data-lightbox="pokoj_meski" href="img/realizacje/pokoj_meski/koncepcja_meskieg_pokoju_1.JPEG" class="album" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+										<img class="album_cover" alt="koncepcja_meskiego_pokoju" src="img/realizacje/pokoj_meski/koncepcja_meskieg_pokoju_1.JPEG">
+										<span class="album_desc" style="float:left;">Męski pokój</span>
+									</a> 
+									
+									<a data-lightbox="pokoj_meski" href="img/realizacje/pokoj_meski/koncepcja_meskieg_pokoju_2.JPEG" class="album" ></a>
+									<a data-lightbox="pokoj_meski" href="img/realizacje/pokoj_meski/koncepcja_meskieg_pokoju_3.JPEG" class="album" ></a>
+									<a data-lightbox="pokoj_meski" href="img/realizacje/pokoj_meski/koncepcja_meskieg_pokoju_4.JPEG" class="album" ></a>
+									
+								</div>
+								
+								<div class="col-md-4 galeria">
+									<a data-lightbox="mieszkanie_28" href="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni1.jpg" class="album" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+										
+										<img class="album_cover" alt="mieszkanie 28 metrow kielce" src="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni1.jpg">
+										<span class="album_desc">Pokój 28m2</span>
+									</a> 
+									<a data-lightbox="mieszkanie_28" href="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni2.jpg" class="album" ></a>
+									<a data-lightbox="mieszkanie_28" href="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni3.jpg" class="album" ></a>
+									<a data-lightbox="mieszkanie_28" href="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni4.jpg" class="album" ></a>
+									<a data-lightbox="mieszkanie_28" href="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni5.jpg" class="album" ></a>
+									<a data-lightbox="mieszkanie_28" href="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni6.jpg" class="album" ></a>
+									<a data-lightbox="mieszkanie_28" href="img/realizacje/mieszkanie_28/mieszkanie_28m2_wnetrza_od_kuchni7.jpg" class="album" ></a>
+									
+								</div>
+								
+								<div class="col-md-2">
+								</div>
+								
+								<div class="col-md-5">
+								</div>
+								<div class="col-md-2" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+									<button class="przycisk" style="marg">
+										Pokaż więcej zdjęć
+									</button>
+								</div>
+								<div class="col-md-5">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
             </main>
+			<footer>
+				<div id="stopka" class="row" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+					<div class="col-md-4 elementy_stopki" data-anijs="if: scroll,on:window, do: slideInLeft animated, before: scrollReveal">
+						<form id="kontakt">
+							Skontaktuj sie z nami!(Faza testów - aktualnie wyłączone)
+							<input class="input" type="name" name="name" disabled required data-error="Musisz wypełnić pole" placeholder="Imie i nazwisko" required/>
+							<input class="input" type="email" name="email" data-error="Wpisz poprawny email" placeholder="Adres e-mail" disabled required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+							<input class="input" type="temat" name="temat" required data-error="Musisz wypełnić pole" placeholder="Temat" disabled required>
+							<textarea required data-error="Musisz wypełnić pole" disabled required></textarea>
+							<input id="check"  disabled type="checkbox" required>akceptuje warunki przetwarzania danych osobowych
+							<submit class="przycisk" disabled style="margin-top: 20px;">Wyslij!</submit>
+						</form>
+					</div>
+					<div class="col-md-4 elementy_stopki" style="border-left:1px solid;border-right:1px solid;" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+						<span style="display: block; padding-bottom: 20px;margin-bottom:20px;border-bottom: 1px solid;" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">Buydesign<br>
+						NIP: 657-228-67-04</span>
+						<span style="display: block;">Sprawdz nasze social-media:</span>
+						<a href="#" class="ikona_l" id="fbicon">
+							<img src="icons/fbicon.png" alt="ikona facebooka do naszej strony na facebooku">
+						</a>
+						
+						<a href="#" class="ikona_l" id="instaicon">
+							<img src="icons/instaicon.png" alt="ikona instagrama do naszej strony na insta">
+						</a>
+						
+					</div>
+					<div class="col-md-4 elementy_stopki" data-anijs="if: scroll,on:window, do: slideInRight animated, before: scrollReveal">
+						<span>Tu nas znajdziesz! &#8595;</span>
+						<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.285711212312!2d20.625614415955187!3d50.88142216409774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471827c23ec3b0cb%3A0x12635ec9679c9a14!2sStefana%20Okrzei%2050%2C%2025-525%20Kielce!5e0!3m2!1spl!2spl!4v1652743733390!5m2!1spl!2spl" width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					
+				</div>
+				<div class="col-md-12" style="font-weight: 400; height: 30px; text-align: center; background-color: #809AA0;line-height: 30px;" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+						WnetrzaOdKuchni &copy; 2020-2022 
+				</div>
+				<div class="col-md-12" style="font-weight: 400;height: 30px; text-align: center; background-color: #405660;line-height: 30px;color: #ccc;" data-anijs="if: scroll,on:window, do: slideInUp animated, before: scrollReveal">
+						Strona jest w fazie beta. Wszystkie błędy bedą naprawiane na bierząco. Autor strony: Jakub Raczyński
+				</div>
+			</footer>
         
         
         <script src="scripts/toggleMenu.js"></script>
         <script src="scripts/animacje/anijs-master/src/anijs.js"></script>
         <script src="scripts/animacje/anijs-master/src/helpers/dom/anijs-helper-dom.js"></script>
+		
+        <script src="scripts/animacje/anijs-master/src/helpers/scrollreveal/anijs-helper-scrollreveal.js"></script>
+        <script src="scripts/image_viever.js"></script>
         
         
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		
     </body>
 </html>
