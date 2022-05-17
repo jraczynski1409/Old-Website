@@ -1,0 +1,41 @@
+#realizacje
+{
+	width: 100%;
+    min-height: 400px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.galeria
+{
+	min-height: 300px;
+}
+
+.album
+{
+	display: block;
+	width: auto;
+}
+
+.album_cover
+{
+	width: 100%;
+	margin-top: 24px;
+	filter: grayscale(0.5);
+}
+
+.album_cover:hover
+{
+	filter: grayscale(0);
+	transition-duration: 0.1s;
+	
+}
+
+.album_desc
+{
+	font-size: 16px;
+	float: right;
+}
