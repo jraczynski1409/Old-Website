@@ -1,0 +1,10 @@
+.srodek
+{
+    position: relative;
+	margin: auto;
+	top: 40%;
+	left: 50%;
+	width: 200px;
+	height: 50px;
+	margin-left: -100px;
+}
